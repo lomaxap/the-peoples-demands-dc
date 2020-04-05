@@ -15,26 +15,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,scss,html}": [
-      "prettier --write",
-      "git add"
-    ],
-    "webpack.config.js": [
-      "prettier --write",
-      "git add"
-    ],
-    "package.json": [
-      "prettier --write",
-      "git add"
-    ],
-    "postcss.config.js": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.md": [
-      "prettier --write",
-      "git add"
-    ]
+    "src/**/*.{js,scss,html}": "prettier --write",
+    "webpack.config.js": "prettier --write",
+    "package.json": "prettier --write",
+    "postcss.config.js": "prettier --write",
+    "*.md": "prettier --write"
   },
   "author": "",
   "license": "ISC",
