@@ -1,5 +1,5 @@
-$font-family-sans-serif: 'Poppins', sans-serif;
-$headings-font-family: 'Oswald', sans-serif;
+$font-family-sans-serif: "Poppins", sans-serif;
+$headings-font-family: "Oswald", sans-serif;
 $border-radius: 0;
 // $container-max-widths: (
 //  xl: 960px
@@ -9,10 +9,19 @@ $card-border-width: 0;
 $navbar-padding-y: 25px;
 
 $theme-colors: (
-	"primary": #871B08
+  "primary": #871b08,
 );
 
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap);
+@import url(
+  https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:ital,
+  wght@0,
+  300;0,
+  400;0,
+  700;1,
+  300;1,
+  400;1,
+  700&display=swap
+);
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/utilities";
@@ -24,15 +33,15 @@ $theme-colors: (
 @import "navbar";
 
 $fontSizes: (
-	3xs: 0.87rem,
-	2xs: 0.93rem,
-	xs: 1rem,
-	sm: 1.06rem,
-	md: 1.13rem,
-	lg: 1.46rem,
-	xl: 2.13rem,
-	2xl: 2.66rem,
-	3xl: 3.19rem
+  3xs: 0.87rem,
+  2xs: 0.93rem,
+  xs: 1rem,
+  sm: 1.06rem,
+  md: 1.13rem,
+  lg: 1.46rem,
+  xl: 2.13rem,
+  2xl: 2.66rem,
+  3xl: 3.19rem,
 );
 
 @each $sizeKey, $sizeValue in $fontSizes {
