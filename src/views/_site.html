@@ -9,6 +9,9 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg border-bottom border-3 border-primary">
+      <a href="#content" class="sr-only sr-only-focusable"
+        >Skip to main content</a
+      >
       <div class="container">
         <button
           class="navbar-toggler btn-outline-primary border-2 rounded"
@@ -29,12 +32,9 @@
               We Demand.
             </h1>
           </a>
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#intro">Intro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#demands">Demands</a>
+              <a class="nav-link" href="/faq.pdf" target="_blank">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -44,7 +44,9 @@
       </div>
     </nav>
 
-    <%= htmlWebpackPlugin.options.body %>
+    <span id="main">
+      <%= htmlWebpackPlugin.options.body %>
+    </span>
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
