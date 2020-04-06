@@ -21,10 +21,14 @@ module.exports = async () => {
     module: {
       rules: [
         {
+          test: /\.(svg|eot|ttf|woff|woff2)$/,
+          use: "file-loader",
+        },
+        {
           test: /\.scss$/i,
           use: [
             MiniCssExtractPlugin.loader,
-            "css-loader",
+            { loader: "css-loader", options: { url: false } },
             "postcss-loader",
             "sass-loader",
           ],
