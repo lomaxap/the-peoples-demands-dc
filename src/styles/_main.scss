@@ -1,6 +1,6 @@
 $font-family-sans-serif: "Poppins", sans-serif;
 $headings-font-family: "Oswald", sans-serif;
-$border-radius: 0;
+$border-radius: 0px;
 // $container-max-widths: (
 //  xl: 960px
 //);
@@ -20,6 +20,7 @@ $theme-colors: (
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/card";
+@import "~bootstrap/scss/buttons";
 
 @import "navbar";
 

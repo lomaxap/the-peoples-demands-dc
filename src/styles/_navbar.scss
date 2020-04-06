@@ -1,6 +1,10 @@
 .navbar {
   h1 {
-    letter-spacing: -0.01rem;
+    letter-spacing: -0.05rem;
+  }
+
+  .navbar-brand {
+    white-space: normal !important;
   }
 
   border-width: 3px !important;
