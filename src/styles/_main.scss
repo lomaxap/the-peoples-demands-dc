@@ -1,6 +1,5 @@
 $font-family-sans-serif: "Poppins", sans-serif;
 $headings-font-family: "Oswald", sans-serif;
-$border-radius: 0px;
 $card-border-width: 0;
 
 $navbar-padding-y: 25px;
@@ -36,6 +35,20 @@ $fontSizes: (
 
 @each $sizeKey, $sizeValue in $fontSizes {
   .text-size-#{$sizeKey} {
-    font-size: #{$sizeValue};
+    font-size: #{$sizeValue} !important;
+  }
+}
+
+$borderWidths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+);
+
+@each $borderKey, $borderValue in $borderWidths {
+  .border-#{$borderKey} {
+    border-width: #{$borderValue} !important;
   }
 }
