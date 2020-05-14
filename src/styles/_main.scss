@@ -16,40 +16,12 @@ $theme-colors: (
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/card";
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/badge";
 
 @import "navbar";
-
-$fontSizes: (
-  3xs: 0.87rem,
-  2xs: 0.93rem,
-  xs: 1rem,
-  sm: 1.06rem,
-  md: 1.13rem,
-  lg: 1.46rem,
-  xl: 2.13rem,
-  2xl: 2.66rem,
-  3xl: 3.19rem,
-);
-
-@each $sizeKey, $sizeValue in $fontSizes {
-  .text-size-#{$sizeKey} {
-    font-size: #{$sizeValue} !important;
-  }
-}
-
-$borderWidths: (
-  1: 1px,
-  2: 2px,
-  3: 3px,
-  4: 4px,
-  5: 5px,
-);
-
-@each $borderKey, $borderValue in $borderWidths {
-  .border-#{$borderKey} {
-    border-width: #{$borderValue} !important;
-  }
-}
+@import "border-widths";
+@import "font-sizes";
+@import "sticky";

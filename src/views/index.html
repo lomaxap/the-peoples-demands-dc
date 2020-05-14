@@ -1,40 +1,11 @@
 <div class="container mt-5 mb-5">
   <div class="row">
     <div class="col-lg-6 pt-2 pb-5">
-      <h1
-        class="display-3 text-uppercase text-primary mb-5 text-center text-lg-left"
-      >
-        The People's Demands DC
-      </h1>
-      <div class="row">
-        <div class="col-md-6 col-lg-5 mb-2">
-          <a
-            class="btn btn-primary btn-lg btn-block"
-            href="https://forms.gle/womHXTDVU7Bw3uWu8"
-            target="_blank"
-            >Take the Survey</a
-          >
-          <a
-            class="btn btn-primary btn-lg btn-block"
-            href="https://bit.ly/COVIDSpan"
-            target="_blank"
-            >Responda la encuesta</a
-          >
-        </div>
-        <div class="col-md-6 col-lg-5 mb-2">
-          <a
-            class="btn btn-light btn-lg btn-block"
-            href="https://drive.google.com/file/d/1463BvMuBpICdTNBAfAGo7J1vgbCHhmCT/view"
-            target="_blank"
-            >Read the FAQ</a
-          >
-          <a
-            class="btn btn-light btn-lg btn-block"
-            href="https://bit.ly/FAQEspanol"
-            target="_blank"
-            >Preguntas comunes</a
-          >
-        </div>
+      <div class="text-center text-lg-left">
+        <h1 class="display-3 text-uppercase text-primary mb-5">
+          The People's Demands DC
+        </h1>
+        <a class="btn btn-lg btn-primary" href="#demands">Read the Demands</a>
       </div>
     </div>
     <div id="intro" class="col-lg-6 lead">
@@ -47,41 +18,114 @@
         native Washingtonians.
       </p>
       <p>
-        <span class="text-primary font-weight-bold"
-          >We are developing a list of demands</span
-        >
-        with the help of community members, students of all ages, organizers,
-        advocates and activists. We want to make sure that our finalized list of
-        demands has been shared with and supported by as many DC folks as
-        possible, particularly Black, brown, immigrant, low-income, indigenous
-        and native Washingtonian residents.
-        <span class="text-primary font-weight-bold">Take the survey</span> today
-        and give your input today!
+        The following are the People’s Demands of Washington, DC for the COVID-
+        19 pandemic. This list represents the thoughts and contributions of
+        thousands of DC residents and organizations representing the people.
       </p>
+      <p>
+        These demands are imperative for our survival, our growth and are a
+        reflection of the DC we want to live in.
+      </p>
+      <details>
+        <summary class="text-primary font-size-sm">Read More</summary>
+        <div>
+          <p>
+            We acknowledge that this list may be limited and that it would not
+            be possible to include everyone’s specific demands. We consolidated
+            and prioritized the demands that were reflected by the most people,
+            always prioritizing those experiencing the most harm.
+          </p>
+
+          <p>
+            We also acknowledge that while there was not as much representation
+            from marginalized voices as we were hoping with the survey
+            respondents, the responses do show that the recommendations are
+            supported by a cross-section of the District’s racial and income
+            groups. The demands below are the results of an initial, quick
+            turnaround survey. We will continue to engage and grow the number of
+            people who engage with the survey and with our organizing process
+            around the demands.
+          </p>
+
+          <p>
+            We recognize that many of these demands take full plans, budgets and
+            details. Many organizations have monetary breakdowns of the specific
+            demands and can be contacted for specific plans.
+          </p>
+        </div>
+      </details>
     </div>
   </div>
 </div>
 
-<!-- <div class="bg-light">
-  <div id="demands" class="container pt-5 pb-5">
-    <% pageData.demands.forEach((demand, index) => { %>
-    <div
-      id="demand-<%= index %>"
-      class="card border-bottom border-secondary rounded-0 pb-2"
-    >
-      <div class="card-header font-weight-bold bg-white">
-        <%= index + 1 %>
+<div class="bg-light" id="demands">
+  <div class="container pt-5 pb-5">
+    <nav id="mobile-demand-nav" class="sticky d-md-none pb-5">
+      <button
+        class="btn btn-primary btn-block"
+        type="button"
+        data-toggle="collapse"
+        data-target="#demand-nav"
+        aria-expanded="false"
+        aria-controls="demand-nav"
+      >
+        Menu
+      </button>
+      <div class="list-group sticky collapse" id="demand-nav">
+        <% pageData.demands.forEach((demand) => { %>
+        <a
+          class="list-group-item"
+          href="#<%= demand.category.replace(' ', '-').replace('/', '-') %>"
+          ><%= demand.category %></a
+        >
+        <% }) %>
       </div>
-      <div class="card-body">
-        <h5 class="card-title text-uppercase text-primary">
-          <%= demand.title %>
-        </h5>
-        <p class="card-text"><%= demand.body %></p>
+    </nav>
+    <h1 class="text-primary">We, the People of DC, demand the following:</h1>
+    <div class="row">
+      <div class="col-12 col-md-3 d-none d-md-block">
+        <div class="list-group sticky pt-5" id="sidenav">
+          <% pageData.demands.forEach((demand) => { %>
+          <a
+            class="list-group-item"
+            href="#<%= demand.category.replace(' ', '-').replace('/', '-') %>"
+            ><%= demand.category %></a
+          >
+          <% }) %>
+        </div>
+      </div>
+      <div class="col-12 col-md-9" data-offset="0">
+        <% pageData.demands.forEach((demand) => { %>
+        <div
+          id="<%= demand.category.replace(' ', '-').replace('/', '-') %>"
+          class="pt-5"
+        >
+          <h3 class="text-primary"><%= demand.category %></h3>
+          <p><%= demand.lead %></p>
+          <h4 class="text-uppercase text-size-sm mt-3">
+            We, the People of DC, demand:
+          </h4>
+          <% demand.list.forEach((item, index) => { %>
+          <div
+            id="<%= demand.category.replace(' ', '-').replace('/', '-') %>-<%= index %>"
+            class="card border-bottom border-secondary rounded-0 pb-2 bg-light"
+          >
+            <div
+              class="card-header font-weight-bold text-size-md bg-light pr-0 pl-0"
+            >
+              <%= index + 1 %>
+            </div>
+            <div class="card-body pr-0 pl-0">
+              <p class="card-text text-size-md"><%= item %></p>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+        <% }) %>
       </div>
     </div>
-    <% }) %>
   </div>
-</div> -->
+</div>
 
 <div class="bg-dark text-white text-size-lg">
   <div id="about" class="container pt-5 pb-5">
