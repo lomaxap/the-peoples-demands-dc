@@ -27,7 +27,7 @@
         reflection of the DC we want to live in.
       </p>
       <details>
-        <summary class="text-primary font-size-sm">Read More</summary>
+        <summary class="text-primary">Read More</summary>
         <div>
           <p>
             We acknowledge that this list may be limited and that it would not
@@ -97,11 +97,11 @@
       <div class="col-12 col-md-9" data-offset="0">
         <% pageData.demands.forEach((demand) => { %>
         <div id="<%= demand.id %>" class="pt-5">
-          <h3 class="text-primary"><%= demand.category %></h3>
+          <h2 class="text-primary"><%= demand.category %></h2>
           <p><%= demand.lead %></p>
-          <h4 class="text-uppercase text-size-sm mt-3">
+          <h3 class="text-uppercase text-size-lg mt-5">
             We, the People of DC, demand:
-          </h4>
+          </h3>
           <% demand.list.forEach((item, index) => { %>
           <div
             id="<%= demand.id %>-<%= index %>"
