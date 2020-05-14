@@ -8,6 +8,5 @@ const stickyElements = document.querySelectorAll(".sticky");
 StickyFill.add(stickyElements);
 
 $("#demand-nav a").click(() => {
-  console.log("here");
   $("#demand-nav").collapse("hide");
 });

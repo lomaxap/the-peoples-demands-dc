@@ -75,7 +75,7 @@
         <% pageData.demands.forEach((demand) => { %>
         <a
           class="list-group-item"
-          href="#<%= demand.category.replace(' ', '-').replace('/', '-') %>"
+          href="#<%= demand.category.replace(' ', '-').replace('/', '-').replace(',', '') %>"
           ><%= demand.category %></a
         >
         <% }) %>
@@ -88,7 +88,7 @@
           <% pageData.demands.forEach((demand) => { %>
           <a
             class="list-group-item"
-            href="#<%= demand.category.replace(' ', '-').replace('/', '-') %>"
+            href="#<%= demand.category.replace(' ', '-').replace('/', '-').replace(',', '') %>"
             ><%= demand.category %></a
           >
           <% }) %>
@@ -97,7 +97,7 @@
       <div class="col-12 col-md-9" data-offset="0">
         <% pageData.demands.forEach((demand) => { %>
         <div
-          id="<%= demand.category.replace(' ', '-').replace('/', '-') %>"
+          id="<%= demand.category.replace(' ', '-').replace('/', '-').replace(',', '') %>"
           class="pt-5"
         >
           <h3 class="text-primary"><%= demand.category %></h3>
