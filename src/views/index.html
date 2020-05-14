@@ -60,7 +60,11 @@
 
 <div class="bg-light" id="demands">
   <div class="container pt-5 pb-5">
-    <nav id="mobile-demand-nav" class="sticky d-md-none pb-5">
+    <nav
+      id="mobile-demand-nav"
+      class="sticky d-md-none mb-5"
+      style="height: 38px;"
+    >
       <button
         class="btn btn-primary btn-block"
         type="button"
@@ -69,13 +73,11 @@
         aria-expanded="false"
         aria-controls="demand-nav"
       >
-        Menu
+        Guide
       </button>
       <div class="list-group sticky collapse" id="demand-nav">
         <% pageData.demands.forEach((demand) => { %>
-        <a
-          class="list-group-item"
-          href="#<%= demand.category.replace(' ', '-').replace('/', '-').replace(',', '') %>"
+        <a class="list-group-item" href="#<%= demand.id %>"
           ><%= demand.category %></a
         >
         <% }) %>
