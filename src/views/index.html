@@ -86,9 +86,7 @@
       <div class="col-12 col-md-3 d-none d-md-block">
         <div class="list-group sticky pt-5" id="sidenav">
           <% pageData.demands.forEach((demand) => { %>
-          <a
-            class="list-group-item"
-            href="#<%= demand.category.replace(' ', '-').replace('/', '-').replace(',', '') %>"
+          <a class="list-group-item" href="#<%= demand.id %>"
             ><%= demand.category %></a
           >
           <% }) %>
@@ -96,10 +94,7 @@
       </div>
       <div class="col-12 col-md-9" data-offset="0">
         <% pageData.demands.forEach((demand) => { %>
-        <div
-          id="<%= demand.category.replace(' ', '-').replace('/', '-').replace(',', '') %>"
-          class="pt-5"
-        >
+        <div id="<%= demand.id %>" class="pt-5">
           <h3 class="text-primary"><%= demand.category %></h3>
           <p><%= demand.lead %></p>
           <h4 class="text-uppercase text-size-sm mt-3">
@@ -107,7 +102,7 @@
           </h4>
           <% demand.list.forEach((item, index) => { %>
           <div
-            id="<%= demand.category.replace(' ', '-').replace('/', '-') %>-<%= index %>"
+            id="<%= demand.id %>-<%= index %>"
             class="card border-bottom border-secondary rounded-0 pb-2 bg-light"
           >
             <div

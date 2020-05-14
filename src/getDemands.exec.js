@@ -6,6 +6,7 @@ module.exports = async () => {
 
   return [
     {
+      id: "federal-government",
       category: "Federal Government",
       lead:
         "All states are receiving a minimum of $1.25 billion from the federal government. DC is receiving much less, when our population is more than some states. The Federal Government does not acknowledge our full humanity, even when they are in our backyard. We need the full monetary support of the Federal Government.",
@@ -20,6 +21,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "policing",
       category: "Policing",
       lead:
         "The Metropolitan Police Department has a history of mistreating, profiling and arresting Black, Brown and poor people in DC. We recognize that some residents find safety in the police and therefore we need the police to follow protocol that will keep all of us safe.",
@@ -34,6 +36,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "incarceration",
       category: "Incarceration",
       lead:
         "The DC Jail is unsafe, unsanitary, and was in no condition to house people before COVID 19. Now, as a space where DC residents are unable to follow social distancing, it’s dangerous and unjust to keep anyone inside the jail.",
@@ -55,6 +58,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "homelessness",
       category: "Homelessness",
       lead:
         "Before COVID- 19, 6,521 DC Residents experienced homelessness every night. We believe housing is a human right and required for anyone attempting to practice social distancing. The DC Government needs to prioritize our most impacted communities first and recognize housing is healthcare.",
@@ -67,6 +71,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "housing",
       category: "Housing",
       lead:
         "Thousands of people have lost the ability to pay their rent or mortgage due to loss of income. While there is a moratorium on late fees and rent increases during the emergency, many are accruing debt in the form of back rent and missed mortgage payments. The impact of this virus will stay with us for years, and our residents deserve to have a home that they don’t have to worry about losing.",
@@ -84,6 +89,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "work-economic-justice",
       category: "Work/Economic Justice",
       lead:
         "DC residents deserve economic justice, regardless of the way they receive money. Economic justice includes supporting each resident holistically- our families, our communities and our small businesses.",
@@ -98,6 +104,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "health",
       category: "Health",
       lead:
         "COVID-19 is a public health emergency that is impacting all other parts of our DC healthcare network. All residents need to have access to comprehensive medical attention and to be physically safe and as healthy as possible. The DC Government must protect our essential workers and prioritize all those most vulnerable to the virus.",
@@ -118,6 +125,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "education",
       category: "Education",
       lead:
         "COVID 19 has made the educational inequities that existed in DC before the virus, much more evident now. Students all over the city deserve a quality education, rooted in equity and racial justice. DC students, families and school staff need to feel confident that they will have the information, support, equipment and flexibility needed during the pandemic.",
@@ -137,6 +145,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "children-young-people",
       category: "Children/Young People",
       lead:
         "Children and young people need to be prioritized the most in this city. By centering our youngest residents, their needs, their unique differences, their caretakers and families and the systems they depend on we will be able to learn how to best support everyone through this virus.",
@@ -152,6 +161,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "disability-rights",
       category: "Disability Rights",
       lead:
         "DC’s residents with disabilities deserve additional support during this pandemic. Many services, medical facilities and educational spaces are closed or overwhelmed with need. The DC Government needs to make sure those of us with disabilities have what we need.",
@@ -164,6 +174,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "anti-discrimination",
       category: "Anti-Discrimination",
       lead:
         "Discrimination and injustice have no place in our city. During the COVID-19 pandemic the DC Government needs to ensure all of our residents, particularly those facing additional injustice because of the pandemic, will be protected and supported.",
@@ -176,6 +187,7 @@ module.exports = async () => {
       ],
     },
     {
+      id: "arts-culture-history",
       category: "Arts, Culture, & History",
       lead:
         "DC has an amazing, rich culture of Blackness- through Gogo, murals, historical landmarks, restaurants, etc. Because of systemic racism and huge racial inequities in the city, DC’s Black residents and Black culture are at a greater risk of dying out. DC needs to be intentional about the legacy of our city and we need to unapologetically prioritize our Blackness.",
